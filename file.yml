@@ -1,0 +1,28 @@
+name: murali
+age: '28'
+address:
+    home: hurdman
+    pin: 64102
+    country:
+        birth: Inadia
+        current: Canada
+    Array:
+        - 'Array obj 1'
+        - 'Array obj 2'
+        -  key : value
+        
+work: Feenics
+Array:
+    - 'Array One'
+    - 'Array Two'
+
+
+longText : >
+    This is a long longText
+    Using greater than sign allows me to write in a single line
+    Thanks
+
+longTextTwo : |
+    This is a long longText
+    Using pipe than sign allows me to write in a new line
+    Thanks
