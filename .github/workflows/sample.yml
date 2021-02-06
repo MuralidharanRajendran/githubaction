@@ -1,10 +1,19 @@
 name: shell commands
-on : [push]
-
+on : push
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
+      - name : Check directory bfore checkout action
+        run : |
+          pwd
+          ls
+      - name : Using checkout github action
+        uses: actions/checkout@v2
+      - name : Check directory after checkout action
+        run : |
+          pwd
+          ls
       - name : echo a string
         run : echo "Hello World"
       - name : Multiple line script
