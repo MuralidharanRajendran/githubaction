@@ -8,7 +8,7 @@ jobs:
       - name : echo a string
         run : echo "Hello World"
       - name : Multiple line script
-        run: |
+        run: | 
           node -v
           npm -v
       - name : python commands
@@ -16,3 +16,14 @@ jobs:
         run: |
           import platform
           print(platform.processor())
+  run-windows-commands:
+    runs-on : windows-latest
+    needs : ["run-shell-command"]
+    steps:
+      - name  : Directory on powershell
+        run : Get-loaction
+      - name : Directory on Bash
+        run : pwd
+        shell: bash
+
+
