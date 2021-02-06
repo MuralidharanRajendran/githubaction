@@ -21,7 +21,7 @@ jobs:
     needs : ["run-shell-command"]
     steps:
       - name  : Directory on powershell
-        run : Get-loaction
+        run : Get-location
       - name : Directory on Bash
         run : pwd
         shell: bash
